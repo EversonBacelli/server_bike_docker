@@ -12,5 +12,8 @@ app.use('/', router_bikes )
 const { router_cliente } = require('./src/router/router_clientes.js')
 app.use('/', router_cliente )
 
+const { router_emprestimo } = require('./src/router/router_emprestimo.js')
+app.use('/', router_emprestimo )
+
 const porta = process.env.PORTA
 app.listen(porta, console.log(`Operando na porta ${porta}`))
